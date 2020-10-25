@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   render() {
+    console.log("counter - render");
+
     return (
       <div>
         <h4>{this.props.id}</h4>
