@@ -19,11 +19,6 @@ class App extends Component {
     console.log("app - constructor");
   }
 
-  componentDidMount() {
-    // Ajax call
-    console.log("app - mounted");
-  }
-
   handleIncrement = (counter) => {
     const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
@@ -75,6 +70,11 @@ class App extends Component {
         </main>
       </React.Fragment>
     );
+  }
+
+  componentDidMount() {
+    // Ajax call
+    console.log("app - mounted");
   }
 }
 
